@@ -17,7 +17,7 @@ public class GreatMission1 {
 		int strike = 0;
 		int ball = 0;
 		int out = 0;
-
+		int cnt = 0;
 		for (int i = 0; i < rArr.length; i++) {
 			rArr[i] = (int) ((Math.random() * (max - min)));
 			for (int j = 0; j < i; j++) {
@@ -33,6 +33,9 @@ public class GreatMission1 {
 //		}
 //		System.out.println();
 		while (strike < 3) {
+			++cnt;
+			System.out.println("--------------");
+			System.out.println(cnt+"회 시도중");
 			strike = 0;
 			ball = 0;
 			out = 0;
@@ -69,10 +72,10 @@ public class GreatMission1 {
 			out = Len - strike - ball;
 			
 			
-			for (int i = 0; i < myArr.length; i++) {
-				System.out.print(myArr[i] + " ");
-			}
-			System.out.println();
+//			for (int i = 0; i < myArr.length; i++) {
+//				System.out.print(myArr[i] + " ");
+//			}
+			
 			System.out.println("Strike : " + strike);
 			System.out.println("Ball : " + ball);
 			System.out.println("Out : " + out);
