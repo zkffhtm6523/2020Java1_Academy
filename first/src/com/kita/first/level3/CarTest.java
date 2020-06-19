@@ -1,0 +1,13 @@
+package com.kita.first.level3;
+
+public class CarTest {
+	public static void main(String[] args) {
+		Car car0 = new Car();
+		Car car1 = new Car("소나타","흰색",2500);
+		
+		car0.introduceMyCar();
+		car1.introduceMyCar();
+		//자바는 기본적으로 직접 주소값을 접근하는 것을 제한한다.
+		//생성자 or getter, setter
+	}
+}
