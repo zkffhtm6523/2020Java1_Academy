@@ -35,7 +35,7 @@ public class BoardVO {
 	}
 	
 	/*
-	 * private	같은 클래스
+	 * private	같은 클래스. 값 넣는 방법 2가지, 빼는 방법 1가지
 	 * default	같은 패키지
 	 * protected 같은 패키지+상속관계
 	 * public
@@ -45,5 +45,7 @@ public class BoardVO {
 	 * 값 받는 방법 1개 : getter
 	 * 
 	 * setter : 타입은 무조건 void
+	 * 
+	 * 
 	 */
 }
