@@ -21,6 +21,9 @@ public class MyListTest {
 		System.out.println(Arrays.toString(list.arr));
 		int delVal = list.remove();
 		System.out.println(delVal);
+		MyArrays.print(list);
+		System.out.println();
+		System.out.println(MyArrays.toString(list));
 	}
 }
 
@@ -73,6 +76,9 @@ class MyList{
 	int arrGet(int idx) {
 		return arr[idx];
 	}
+	int[] arrGet() {
+		return arr;
+	}
 	
 	//마지막이 지워짐..배열 2개
 	int remove(int idx) {
@@ -84,13 +90,13 @@ class MyList{
 	//		temp[i-1] = arrGet(i);
 	//	}
 	//	arr = temp;
-	for (int i = 0; i < temp.length; i++) {
-		temp[i] = (i < idx) ? arrGet(i): arrGet(i+1);
-	}
-	int delVal = arr[idx];
-	arr = temp;
-	return delVal;
-	}
+		for (int i = 0; i < temp.length; i++) {
+			temp[i] = (i < idx) ? arrGet(i): arrGet(i+1);
+		}
+			int delVal = arr[idx];
+			arr = temp;
+			return delVal;
+		}
     int remove() {
     //	int[] temp = new int[arrSize()-1];
     //	int value = arrGet(arr.length-1);
@@ -101,4 +107,27 @@ class MyList{
     //	return value;
     	return remove(arr.length-1);
 }
+}
+
+class MyArrays{
+	static void print(MyList index) {
+//		System.out.println(Arrays.toString(index.arrGet()));
+//			System.out.println(temp);
+		System.out.print("[");
+		for (int i = 0; i < index.arrSize(); i++) {
+			System.out.print(i == index.arrSize()-1 ? index.arrGet(i)+"]":index.arrGet(i)+", ");
+		}
+//			if (i == index.arrSize()-1) {
+//				System.out.println(index.arrGet(i)+"]");
+//			} else {
+//				System.out.print(index.arrGet(i)+", ");
+//			}
+		}
+	static String toString(MyList index) {
+		String temp = "[";
+		for (int i = 0; i < index.arrSize(); i++) {
+			temp += (i == index.arrSize()-1) ? index.arrGet(i)+"]":index.arrGet(i)+", ";
+	}
+		return temp;
+	}
 }
