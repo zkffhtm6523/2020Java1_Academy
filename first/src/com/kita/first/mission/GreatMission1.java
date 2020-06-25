@@ -79,6 +79,7 @@ public class GreatMission1 {
 			System.out.println("Strike : " + strike);
 			System.out.println("Ball : " + ball);
 			System.out.println("Out : " + out);
+			sc.close();
 		}
 
 
