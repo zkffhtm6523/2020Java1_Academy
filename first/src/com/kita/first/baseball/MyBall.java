@@ -1,10 +1,9 @@
 package com.kita.first.baseball;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class MyBall {
-	private int[] myArr;
+	int[] myArr;
 	private Scanner sc;
 
 	MyBall() {
@@ -52,7 +51,7 @@ public class MyBall {
 				
 			}
 		}
-		System.out.println(Arrays.toString(myArr));
+		
 	}
 
 	public int get(int idx) {
