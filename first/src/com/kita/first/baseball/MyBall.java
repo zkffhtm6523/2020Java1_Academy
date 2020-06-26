@@ -30,12 +30,10 @@ public class MyBall {
 				myArr[i] = Integer.parseInt(val);
 			} catch (Exception e) {
 				myArr[i] = 0;
-			} 
-			if (myArr[i] == 0) {
 				i--;
 				System.out.println("숫자만 입력하세요.");
 				continue;
-			}
+			} 
 			if (myArr[i] < min || myArr[i] > max) {
 				System.out.println("범위 초과");
 				i--;

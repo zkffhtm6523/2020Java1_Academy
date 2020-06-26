@@ -1,7 +1,5 @@
 package com.kita.first.baseball;
 
-import java.util.Arrays;
-
 public class Baseball {
 
 	private int[] rArr;
@@ -33,7 +31,7 @@ public class Baseball {
 				}
 			}
 		}
-		System.out.println(Arrays.toString(getrArr()));
+//		System.out.println(Arrays.toString(getrArr()));
 	}
 
 	public int[] getrArr() {

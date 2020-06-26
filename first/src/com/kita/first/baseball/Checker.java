@@ -29,9 +29,6 @@ public class Checker {
 		System.out.printf("아웃 : %d\n",out);
 		System.out.println("-----------");
 		cnt++;
-		if (out == len) {
-			return false;
-		}
-		return true;
+		return strike != len;
 	}
 }
