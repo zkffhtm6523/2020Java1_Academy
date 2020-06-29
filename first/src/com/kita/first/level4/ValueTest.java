@@ -8,7 +8,6 @@ public class ValueTest {
 		System.out.println("1: "+(str == str2));
 		System.out.println("2: "+str.equals(str2));
 		//String은 equals를 부모껄 안 쓰고 오버라이딩
-		
 		System.out.println();
 		Value val1 = new Value(1);
 		Value val2 = new Value(1);
