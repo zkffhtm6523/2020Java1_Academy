@@ -15,6 +15,7 @@ public class ValueTest {
 		System.out.println("1: "+(val1 == val2));
 		System.out.println("2: "+val1.equals(val2));
 		
+		
 		//equals는 기본적으로 주소값비교 부모껄 써서 false
 	}
 	
