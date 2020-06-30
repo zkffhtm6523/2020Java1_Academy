@@ -3,6 +3,7 @@ package com.kita.first.level5;
 public class AnimalTest {
 	public static void main(String[] args) {
 		Animal ani = new Sparrow();
+		Sparrow ddd = (Sparrow) ani;
 		ani.cry();
 		ani = new Dog();
 		ani.cry();
