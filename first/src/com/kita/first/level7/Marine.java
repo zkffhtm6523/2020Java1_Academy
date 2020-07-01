@@ -1,6 +1,6 @@
 package com.kita.first.level7;
 
-public class Marine extends Unit implements AttackUnit {
+public class Marine extends Unit implements AttackUnit, Carable {
 
 	private int damage;
 
@@ -11,10 +11,7 @@ public class Marine extends Unit implements AttackUnit {
 
 	@Override
 	public void attack(Unit u) {
-		if (this == u) {
-			System.out.println("ㄴㄴ");
-			return;
-		}
+		if (this == u) {return;}
 		System.out.println("따다다다~");
 		u.getDamage(damage);
 	}

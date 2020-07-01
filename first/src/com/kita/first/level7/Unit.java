@@ -16,8 +16,11 @@ public class Unit {
 		if (current_hp == 0) {
 			System.out.println("죽었습니다. ");
 		}
-		
 		return current_hp;
+	}
+	
+	public void setCurrent_hp(int hp) {
+		this.current_hp += hp;
 	}
 	
 	public void getDamage(int damage) {
